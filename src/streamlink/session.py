@@ -241,6 +241,7 @@ class Streamlink:
             "hls-audio-select": [],
             "dash-manifest-reload-attempts": 3,
             "ffmpeg-ffmpeg": None,
+            "decryption_key": None,
             "ffmpeg-no-validation": False,
             "ffmpeg-verbose": False,
             "ffmpeg-verbose-path": None,
@@ -456,6 +457,9 @@ class Streamlink:
               - ``None``
               - Override for the ``ffmpeg``/``ffmpeg.exe`` binary path,
                 which by default gets looked up via the ``PATH`` env var
+            * - decryption_key
+              - ``str``
+              - Specify the decryption stream key
             * - ffmpeg-no-validation
               - ``bool``
               - ``False``
