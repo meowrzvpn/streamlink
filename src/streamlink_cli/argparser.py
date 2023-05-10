@@ -1088,6 +1088,16 @@ def build_parser():
         """,
     )
     transport_ffmpeg.add_argument(
+        "-decryption_key",
+        metavar="FILENAME",
+        help="""
+        Use a CENC decryption key to decrypt the media that ffmpeg receives as
+        an input from the DASH streaming that you play with streamlink.
+
+        Example: -decryption_key "<hex key>"
+        """
+    )
+    transport_ffmpeg.add_argument(
         "--ffmpeg-no-validation",
         action="store_true",
         help="""
