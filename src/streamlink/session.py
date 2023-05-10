@@ -242,6 +242,7 @@ class Streamlink:
             "dash-manifest-reload-attempts": 3,
             "ffmpeg-ffmpeg": None,
             "decryption_key": None,
+            "decryption_key_2": None,
             "ffmpeg-no-validation": False,
             "ffmpeg-verbose": False,
             "ffmpeg-verbose-path": None,
@@ -460,6 +461,9 @@ class Streamlink:
             * - decryption_key
               - ``str``
               - Specify the decryption stream key
+            * - decryption_key_2
+              - ``str``
+              - Specify the decryption stream key for track 2
             * - ffmpeg-no-validation
               - ``bool``
               - ``False``
